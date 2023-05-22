@@ -1,0 +1,84 @@
+public class Product  {    
+   private String maPhong;
+   private String maSoMay;  
+   private String tenPhong;  
+   private String trangThai;
+   private int soLuong;
+   private String khoa;
+   
+   public May() {
+       super();
+    }
+public May(String maSoMay, String maPhong, String tenPhong, String trangThai, int soLuong, String khoa){
+        this.maPhong = maPhong;
+        this.maSoMay = maSoMay;
+        this.tenPhong = tenPhong;
+        this.trangThai = trangThai;
+        this.soLuong = soLuong;
+        this.khoa = khoa;
+}
+public String getMaSoMay() {
+   return maSoMay;
+}
+public void setMaSoMay(String maSoMay) {
+   this.maSoMay = maSoMay;
+}
+
+public String getMaPhong() {
+   return maPhong;
+}
+public void setMaPhong(String maPhong) {
+   this.maPhong = maPhong;
+}
+
+
+public String getTenPhong() {
+   return tenPhong;
+}
+public void setTenPhong(String tenPhong) {
+   this.tenPhong = tenPhong;
+}
+
+
+
+public String getTrangThai() {
+   return trangThai;
+}
+public void setTrangThai(String trangThai) {
+   this.trangThai = trangThai;
+}
+
+public String getSoLuong() {
+   return soLuong;
+}
+public void setSoLuong(String soLuong) {
+   this.soLuong = soLuong;
+}
+
+public String getKhoa() {
+   return khoa;
+}
+public void setKhoa(String khoa) {
+   this.khoa = khoa;
+}
+@Override
+public String toString(){
+    return "maPhong{" + "maSoMay=" + maSoMay + ", tenPhong='" + tenPhong +", trangThai='" + trangThai + ",ghiChu='" + ghiChu +",soLuong='" + soLuong +",khoa='" + khoa'}';
+}
+public void nhapMay() {
+        System.out.print("Nhập mã máy: ");
+        maSach = scanner.nextLine();
+        System.out.print("Nhập tên nhà xuất bản: ");
+        nhaXuatBan = scanner.nextLine();
+        System.out.print("Nhập tình trạng máy: ");
+        donGia = scanner.nextLine();
+        System.out.print("Nhập số lượng: ");
+        soLuong = scanner.nextInt();
+    }
+     
+    @Override
+    public String toString() {
+        return "Mã máy: " + this.maMay+ ", tên nhà xuất bản: " + this.nhaXuatBan + ", tình trạng máy: " + 
+                this.tinhTrangMay + ", số lượng: " + this.soLuong;
+    }
+}
