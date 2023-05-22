@@ -1,0 +1,47 @@
+public class KhoaCNTT extends May {
+ @Override
+    private String tinhTrang;
+    private int soLuong;
+public KhoaCNTT() {
+        super();
+    }
+public KhoaCNTT(String tinhTrang, int soLuong) {
+        super();
+        this.tinhTrang = tinhTrang;
+        this.soLuong = soLuong;
+    }
+     public String getTinhTrang() {
+        return tinhTrang;
+    }
+     public void setTinhTrang(String tinhTrang) {
+        this.tinhTrang = tinhTrang;
+    }
+ 
+ 
+    public int getSoLuong() {
+        return soLuong;
+    }
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
+    }
+    public String tinhTrangMay(int x) {
+        switch (number) {
+            case 0:
+                tinhTrang = "cũ";
+                break;
+            case 1:
+                tinhTrang = "mới";
+                break;
+            default:
+                break;
+        }
+        return tinhTrang;
+    }
+    public void nhapMay() {
+        super.nhapMay();
+        System.out.print("Nhập tình trạng máy (0 - cũ/ 1 - mới): ");
+        number = scanner.nextInt();
+    }
+    public String toString() {
+        return super.toString() + ", tình trạng máy: " + this.tinhTrangMay(number);
+    } 
